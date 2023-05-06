@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AccountBookGUI.Calendar.CalendarGUI">
+  <grid id="27dc6" binding="calendarPanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="746" height="457"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="93012" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Calendar"/>
+        </properties>
+      </component>
+      <component id="aa322" class="javax.swing.JButton" binding="backButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <grid id="963fd" binding="calPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="3" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="b2a8a" class="javax.swing.JButton" binding="lastYearButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt;&lt;"/>
+        </properties>
+      </component>
+      <component id="46e5b" class="javax.swing.JButton" binding="nextYearButton">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&gt;&gt;"/>
+        </properties>
+      </component>
+      <component id="df51d" class="javax.swing.JLabel" binding="currentDateLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font/>
+          <text value="Current Date"/>
+        </properties>
+      </component>
+      <component id="9507e" class="javax.swing.JButton" binding="lastMonthButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt;"/>
+        </properties>
+      </component>
+      <component id="9e7bb" class="javax.swing.JButton" binding="nextMonthButton">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&gt;"/>
+        </properties>
+      </component>
+      <component id="422e8" class="javax.swing.JButton" binding="todayButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Today"/>
+        </properties>
+      </component>
+      <component id="ed31b" class="javax.swing.JLabel" binding="todayLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="2b4fb" class="javax.swing.JLabel" binding="selectedDate">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="db46d" class="javax.swing.JButton" binding="saveButton">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save"/>
+        </properties>
+      </component>
+      <component id="d0604" class="javax.swing.JButton" binding="deleteButton">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Delete"/>
+        </properties>
+      </component>
+      <scrollpane id="abc04">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="ca927" class="javax.swing.JTable" binding="calendarTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="2e654" class="javax.swing.JLabel" binding="infoClock">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

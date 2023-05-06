@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AccountBookGUI.MainGUI">
+  <grid id="27dc6" binding="mainMenuPanel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="793" height="403"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="6d22e" class="javax.swing.JLabel" binding="mainMenuBalance">
+        <constraints>
+          <grid row="0" column="0" row-span="4" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="28" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Total Expenditure:"/>
+        </properties>
+      </component>
+      <component id="2e283" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="24" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Menu"/>
+        </properties>
+      </component>
+      <component id="e9573" class="javax.swing.JButton" binding="addNewButton">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Add New (Income or Expenditure)"/>
+        </properties>
+      </component>
+      <component id="df8c5" class="javax.swing.JButton" binding="historyButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="167" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="History"/>
+        </properties>
+      </component>
+      <component id="1e8fb" class="javax.swing.JLabel" binding="welcomeText">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="24" style="3"/>
+          <foreground color="-16777216"/>
+          <text value="Welcome Back"/>
+        </properties>
+      </component>
+      <component id="e5380" class="javax.swing.JButton" binding="logoutButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Logout"/>
+        </properties>
+      </component>
+      <component id="4a294" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="24" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="To Be Added"/>
+        </properties>
+      </component>
+      <component id="ec9a9" class="javax.swing.JButton" binding="dashboardButton">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="167" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Dashboard"/>
+        </properties>
+      </component>
+      <component id="a55c" class="javax.swing.JButton" binding="calenderButton">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Calender"/>
+        </properties>
+      </component>
+      <component id="1093b" class="javax.swing.JButton" binding="myAccountButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="My Account"/>
+        </properties>
+      </component>
+      <scrollpane id="bf861">
+        <constraints>
+          <grid row="5" column="2" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="ff943" class="javax.swing.JTable" binding="toBeAddedTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="93185" class="javax.swing.JButton" binding="managerButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Manager"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

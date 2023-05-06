@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AccountBookGUI.Dashboard.PaymentMethodGUI">
+  <grid id="27dc6" binding="paymentMethodPanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="729" height="469"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="87884" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="36" style="1"/>
+          <text value="Payment Method"/>
+        </properties>
+      </component>
+      <grid id="6e716" binding="panelPieChart" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="4" column="0" row-span="2" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <scrollpane id="f9f88">
+        <constraints>
+          <grid row="2" column="3" row-span="3" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="be1c1" class="javax.swing.JTable" binding="paymentTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="1114b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Year"/>
+        </properties>
+      </component>
+      <component id="94391" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Month"/>
+        </properties>
+      </component>
+      <component id="ce7d1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Date"/>
+        </properties>
+      </component>
+      <component id="3135d" class="javax.swing.JButton" binding="searchButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Search"/>
+        </properties>
+      </component>
+      <component id="ab3b9" class="javax.swing.JRadioButton" binding="incomeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Income"/>
+        </properties>
+      </component>
+      <component id="94b62" class="javax.swing.JRadioButton" binding="expenditureRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Expenditure"/>
+        </properties>
+      </component>
+      <component id="35bd5" class="javax.swing.JButton" binding="backButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="cb819" class="javax.swing.JComboBox" binding="yearComboBox">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Total"/>
+            <item value="2025"/>
+            <item value="2024"/>
+            <item value="2023"/>
+            <item value="2022"/>
+            <item value="2021"/>
+          </model>
+        </properties>
+      </component>
+      <component id="99de" class="javax.swing.JComboBox" binding="monthComboBox">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+            <item value="01"/>
+            <item value="02"/>
+            <item value="03"/>
+            <item value="04"/>
+            <item value="05"/>
+            <item value="06"/>
+            <item value="07"/>
+            <item value="08"/>
+            <item value="09"/>
+            <item value="10"/>
+            <item value="11"/>
+            <item value="12"/>
+          </model>
+        </properties>
+      </component>
+      <component id="3be45" class="javax.swing.JComboBox" binding="dateComboBox">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+            <item value="01"/>
+            <item value="02"/>
+            <item value="03"/>
+            <item value="04"/>
+            <item value="05"/>
+            <item value="06"/>
+            <item value="07"/>
+            <item value="08"/>
+            <item value="09"/>
+            <item value="10"/>
+            <item value="11"/>
+            <item value="12"/>
+            <item value="13"/>
+            <item value="14"/>
+            <item value="15"/>
+            <item value="16"/>
+            <item value="17"/>
+            <item value="18"/>
+            <item value="19"/>
+            <item value="20"/>
+            <item value="21"/>
+            <item value="22"/>
+            <item value="23"/>
+            <item value="24"/>
+            <item value="25"/>
+            <item value="26"/>
+            <item value="27"/>
+            <item value="28"/>
+            <item value="29"/>
+            <item value="30"/>
+            <item value="31"/>
+          </model>
+        </properties>
+      </component>
+      <component id="45603" class="javax.swing.JButton" binding="categoryButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Category &gt;&gt;"/>
+        </properties>
+      </component>
+      <component id="4d675" class="javax.swing.JButton" binding="incomeExpButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt;&lt; IncomeExp"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

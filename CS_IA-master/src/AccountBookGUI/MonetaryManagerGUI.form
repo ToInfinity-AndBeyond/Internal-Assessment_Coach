@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AccountBookGUI.MonetaryManagerGUI">
+  <grid id="27dc6" binding="monetaryManagerPanel" layout-manager="GridLayoutManager" row-count="15" column-count="5" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="834" height="554"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
+    <border type="none"/>
+    <children>
+      <component id="8f931" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Noto Sans Kannada" size="36" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Monetary Manager"/>
+        </properties>
+      </component>
+      <component id="d8338" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Amount ($)"/>
+        </properties>
+      </component>
+      <component id="d1efa" class="javax.swing.JTextField" binding="amountText">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3a5f5" class="javax.swing.JComboBox" binding="yearComboBox">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+            <item value="2028"/>
+            <item value="2027"/>
+            <item value="2026"/>
+            <item value="2025"/>
+            <item value="2024"/>
+            <item value="2023"/>
+            <item value="2022"/>
+          </model>
+        </properties>
+      </component>
+      <component id="9c975" class="javax.swing.JComboBox" binding="monthComboBox">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+            <item value="01"/>
+            <item value="02"/>
+            <item value="03"/>
+            <item value="04"/>
+            <item value="05"/>
+            <item value="06"/>
+            <item value="07"/>
+            <item value="08"/>
+            <item value="09"/>
+            <item value="10"/>
+            <item value="11"/>
+            <item value="12"/>
+          </model>
+        </properties>
+      </component>
+      <component id="2a9de" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Payment Method"/>
+        </properties>
+      </component>
+      <component id="c4919" class="javax.swing.JComboBox" binding="paymentMonthComboBox">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="None"/>
+            <item value="Cash"/>
+            <item value="Check Card"/>
+            <item value="Credit Card"/>
+            <item value="Debit Card"/>
+            <item value="Mobile Payments"/>
+            <item value="Electronic Bank Transfers"/>
+            <item value="Email Invoicing"/>
+          </model>
+        </properties>
+      </component>
+      <component id="3fd47" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Category"/>
+        </properties>
+      </component>
+      <component id="2f386" class="javax.swing.JComboBox" binding="categoryComboBox">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a833f" class="javax.swing.JButton" binding="addButton" default-binding="true">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Add"/>
+        </properties>
+      </component>
+      <scrollpane id="26bb2">
+        <constraints>
+          <grid row="2" column="3" row-span="12" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none" title="Select to Delete"/>
+        <children>
+          <component id="6a25a" class="javax.swing.JTable" binding="historyTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <vspacer id="84fb9">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="b9c46" class="javax.swing.JComboBox" binding="dateComboBox">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+            <preferred-size width="176" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Not Selected"/>
+            <item value="01"/>
+            <item value="02"/>
+            <item value="03"/>
+            <item value="04"/>
+            <item value="05"/>
+            <item value="06"/>
+            <item value="07"/>
+            <item value="08"/>
+            <item value="09"/>
+            <item value="10"/>
+            <item value="11"/>
+            <item value="12"/>
+            <item value="13"/>
+            <item value="14"/>
+            <item value="15"/>
+            <item value="16"/>
+            <item value="17"/>
+            <item value="18"/>
+            <item value="19"/>
+            <item value="20"/>
+            <item value="21"/>
+            <item value="22"/>
+            <item value="23"/>
+            <item value="24"/>
+            <item value="25"/>
+            <item value="26"/>
+            <item value="27"/>
+            <item value="28"/>
+            <item value="29"/>
+            <item value="30"/>
+            <item value="31"/>
+          </model>
+        </properties>
+      </component>
+      <component id="d8de6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Type"/>
+        </properties>
+      </component>
+      <component id="bb485" class="javax.swing.JRadioButton" binding="incomeRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Income"/>
+        </properties>
+      </component>
+      <component id="a78ac" class="javax.swing.JRadioButton" binding="expenditureRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Expenditure"/>
+        </properties>
+      </component>
+      <vspacer id="3c2f4">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+            <preferred-size width="176" height="14"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="8de4e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Note (Optional)"/>
+        </properties>
+      </component>
+      <component id="af090" class="javax.swing.JTextField" binding="noteTextField">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="60b5e" class="javax.swing.JButton" binding="removeButton">
+        <constraints>
+          <grid row="14" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Delete"/>
+        </properties>
+      </component>
+      <component id="57776" class="javax.swing.JButton" binding="backButton" default-binding="true">
+        <constraints>
+          <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="5d827" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Date"/>
+        </properties>
+      </component>
+      <component id="9d6f4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Year"/>
+        </properties>
+      </component>
+      <component id="47c19" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Month"/>
+        </properties>
+      </component>
+      <component id="77534" class="javax.swing.JButton" binding="addAsMonthlyButton">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Add Monthly Income / Subscription"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
